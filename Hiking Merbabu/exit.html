@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Keluar Aplikasi</title>
+    <script>
+      if (typeof Android !== "undefined" && Android.closeApp) {
+        Android.closeApp(); // Memanggil method native Android
+      } else {
+        document.write("<h2 style='color:white;text-align:center;margin-top:40%;'>Tidak bisa keluar otomatis. Tutup aplikasi manual.</h2>");
+      }
+    </script>
+    <style>
+      body { background-color: black; color: white; font-family: sans-serif; }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
